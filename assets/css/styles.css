@@ -22,20 +22,73 @@ h1 {
     margin: auto;
 }
 
-.nav-menu {
-    list-style: none;
-    padding: 0;
+.top-navigation {
+    background-color: #ffffff;
+    overflow: visible;
+    float: right;
+    max-height: 60px;
 }
 
-.nav-menu li {
-    display: inline;
+.top-navigation a {
+    float: left;
+    display: block;
+    color: #000000;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.dropdown {
+    float: left;
+}
+
+.dropdown .drop-button {
+    border: none;
+    outline: none;
+    color: #000000;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    margin: 0;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #c3c3c3;
+    color: black;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 header {
-    position: absolute;
     top: 0;
-    background: #FFFFFF;
+    background: #ffffff;
     width: 100%;
+    max-height: 60px;
+}
+
+.header-logo, .top-navigation {
+    display: inline;
 }
 
 .image-responsive {
@@ -45,9 +98,7 @@ header {
 }
 
 .berkeley-logo {
-    display: inline;
-    max-width: 326px;
-    height: auto;
+    max-height: 60px;
 }
 
 .anniversary-logo {
@@ -55,7 +106,37 @@ header {
     height: auto;
     margin-left: auto;
     margin-right: auto;
+    padding: 15px;
 }
 
 .slick-list { margin: 0 -5px; }
 .slick-slide { padding: 0 5px; }
+
+.slick-prev:before, .slick-next:before {
+    color: black;
+}
+
+.hero-container {
+    background: #DDD5C7;
+    max-height: 564px;
+}
+
+.video-container {
+    position: relative;
+    overflow: hidden;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+
+.video-container iframe, .video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+}
+  
+.video-wrap {
+    width: 100%;
+}
