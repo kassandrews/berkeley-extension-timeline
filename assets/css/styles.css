@@ -22,7 +22,6 @@ h1 {
     margin: auto;
 }
 
-/*
 .top-navigation {
     background-color: #ffffff;
     overflow: visible;
@@ -82,7 +81,6 @@ h1 {
 .dropdown:hover .dropdown-content {
     display: block;
 }
-*/
 
 header {
     top: 0;
