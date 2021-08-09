@@ -1,14 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
         <title>1931 to 1950</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="stylesheet" href="./assets/css/styles.css"/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/4.6.0/css/bootstrap-grid.min.css" integrity="sha512-cKoGpmS4czjv58PNt1YTHxg0wUDlctZyp9KUxQpdbAft+XqnyKvDvcGX0QYCgCohQenOuyGSl8l1f7/+axAqyg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" integrity="sha512-6lLUdeQ5uheMFbWm3CP271l14RsX1xtx+J5x2yeIDkkiBpeVTNhTqijME7GgRKKi6hCqovwCoBTlRBEC20M8Mg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <link rel="stylesheet" href="./assets/css/styles.css"/>
     </head>
     <body>
+        <header>
+            <nav class="nav-container">
+                <div class="logo">
+                    <a href="https://extension.berkeley.edu/"><img src="./assets/images/berkeley-extension-logo.png" alt="berkeley-extension-logo"></a>
+                </div>
+                <div class="navbar">
+                    <div class="icon-bar" onclick="Show()">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                    </div>
+                    <ul id="nav-lists">
+                        <li class="close"><span onclick="Hide()">×</span></li>
+                        <li><a href="./index.html">Home</a></li>
+                        <li>
+                            <div class="dropdown">
+                                <a href="#" class="drop-button">Decades
+                                    <i class="fa fa-caret-down"></i>
+                                </a>
+                                <div class="dropdown-content">
+                                    <a href="./1891-to-1910.html">1891 to 1910</a>
+                                    <a href="./1911-to-1930.html">1911 to 1930</a>
+                                    <a href="./1931-to-1950.html">1931 to 1950</a>
+                                    <a href="./1951-to-1970.html">1951 to 1970</a>
+                                    <a href="./1971-to-1990.html">1971 to 1990</a>
+                                    <a href="./1991-to-2010.html">1991 to 2010</a>
+                                    <a href="./2011-to-2020.html">2011 to 2020</a>
+                                </div>
+                            </div>
+                        </li>
+                        <li><a href="./2021.html">2021</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
         <div class="container">
             <div class="row">
                 <div class="col-sm-12 col-md-10 col-lg-8 offset-sm-0 offset-md-1 offset-lg-2">
@@ -24,13 +60,13 @@
                 <div class="col-sm-12 col-md-10 col-lg-8 offset-sm-0 offset-md-1 offset-lg-2">
                     <div class="decade-carousel">
                         <div>
-                            <img class="image-responsive" src="https://via.placeholder.com/450x300"/>
+                            <img class="image-responsive" src="./assets/images/1931-graduation.jpg"/>
                         </div>
                         <div>
-                            <img class="image-responsive" src="https://via.placeholder.com/450x300"/>
+                            <img class="image-responsive" src="./assets/images/1934-bread-line.jpg"/>
                         </div>
                         <div>
-                            <img class="image-responsive" src="https://via.placeholder.com/450x300"/>
+                            <img class="image-responsive" src="./assets/images/1935-sather-gate.jpg"/>
                         </div>
                     </div>
                 </div>
@@ -54,19 +90,29 @@
                 <div class="col-sm-12 col-md-10 col-lg-8 offset-sm-0 offset-md-1 offset-lg-2">
                     <div class="decade-carousel">
                         <div>
-                            <img class="image-responsive" src="https://via.placeholder.com/450x300"/>
+                            <img class="image-responsive" src="./assets/images/1941-governor-warren.jpg"/>
                         </div>
                         <div>
-                            <img class="image-responsive" src="https://via.placeholder.com/450x300"/>
+                            <img class="image-responsive" src="./assets/images/1941-physical-sciences.jpg"/>
                         </div>
                         <div>
-                            <img class="image-responsive" src="https://via.placeholder.com/450x300"/>
+                            <img class="image-responsive" src="./assets/images/1943-students-drilling.jpg"/>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <script   src="https://code.jquery.com/jquery-3.6.0.min.js"   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="   crossorigin="anonymous"></script>
+        <script>
+            var navList = document.getElementById("nav-lists");
+            function Show() {
+                navList.classList.add("_Menus-show");
+            }
+            
+            function Hide(){
+                navList.classList.remove("_Menus-show");
+            }
+        </script>
         <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
         <script>
             $(document).ready(function () {
