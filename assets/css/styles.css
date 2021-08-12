@@ -274,7 +274,7 @@ h1 {
     height: auto;
     margin-left: auto;
     margin-right: auto;
-    padding: 15px;
+    padding: 30px;
 }
 
 .hero-container {
@@ -286,6 +286,10 @@ h1 {
 .hero-container .row {
     width: inherit;
     margin: 0;
+}
+
+.hero-container .anniversary-logo {
+    padding: 0;
 }
 
 div.col.youtube-video {
@@ -308,4 +312,9 @@ div.col.youtube-video {
   
 .video-wrap {
     width: 100%;
+}
+
+.text-2021 {
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
