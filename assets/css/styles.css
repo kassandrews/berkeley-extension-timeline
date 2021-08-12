@@ -280,7 +280,16 @@ h1 {
 .hero-container {
     background: #DDD5C7;
     max-height: 564px;
-    max-width: 100%;
+    width: 100%;
+}
+
+.hero-container .row {
+    width: inherit;
+    margin: 0;
+}
+
+div.col.youtube-video {
+    padding: 0;
 }
 
 .video-container {
@@ -300,4 +309,3 @@ h1 {
 .video-wrap {
     width: 100%;
 }
-
