@@ -242,6 +242,10 @@
         right: 0px;
         z-index: 1;
     }
+
+    .page-title {
+        display: none;
+    }
 }  
 
 body {
@@ -317,4 +321,44 @@ div.col.youtube-video {
 .text-2021 {
     margin-top: 30px;
     margin-bottom: 30px;
+}
+
+@media only screen and (min-width: 769px) {
+
+    .image-2021 {
+        display: none;
+    }
+
+    .parallax-one {
+        background-image: url(../images/2021-campanile.jpg);
+        height: 500px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .parallax-two {
+        background-image: url(../images/2021-library.JPG);
+        height: 500px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .parallax-three {
+        background-image: url(../images/2021-event.jpg);
+        height: 500px;
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+.header-2021 {
+    text-align: center;
+    font-size: calc(40px + (60 - 40) * ((100vw - 300px) / (1600 - 300)));
+    margin: 20px;
 }
